@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightOnOff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="On()">Turn On</button>  
+        <img id="Img" src="/light-bulb-png-16521.png" alt="" >
+        <button class="btn" onclick="Off()">Turn Off</button>
+    </div>
+
+    <script>
+        
+        const image = document.getElementById('Img');
+        function On(){
+            image.src="/On_light-bulb-png-16521.png";
+        }
+        function Off(){
+            image.src="/light-bulb-png-16521.png";
+        }
+    </script>
+</body>
+</html>
